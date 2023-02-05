@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+bodY{
+    background-color: #262523;
+}
+
+/* Container da calculadora*/
+.container{
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    margin: 7% auto;
+}
+
+
+/*resultado das operações*/
+#result{
+    color: white;
+    margin: 9%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 67px;
+}
+
+/*Botoes da primeira fileira*/
+.btt-special{
+  background-color: #bcb8b1;
+  color: black;
+  width: 62px;
+  height: 62px;
+  border-radius: 40px;
+  font-size: 22px;
+}
+
+/*Botoes da segunda fileira em diante*/
+button{
+    color: white;
+    background-color: #262523;
+    width: 62px;
+    height: 62px;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
+
+/* Cor de fundo do botão igual*/
+.last-item{
+    background-color: #ffa200;
+}
+
+/* Forma do botao zero*/
+#btt-nought{
+    width: 126px;
+    height: 56px;
+}
+
+/* Efeito ao passar o cursor sobre os botôes*/
+button:hover{
+    background-color: #3f3f3c;
+    cursor: pointer;
+}
+
+.last-item:hover{
+    background-color: #ffa225;
+}
