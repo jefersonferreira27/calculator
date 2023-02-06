@@ -40,7 +40,7 @@ bodY{
 
 /*Botoes da segunda fileira em diante*/
 button{
-    border:none;
+    border-style: none;
     color: white;
     background-color: #262523;
     width: 62px;
