@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="calculator/calculator-solid.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="calculator-solid.svg" type="image/x-icon">
 </head>
 <body>
   <div class="container">
-    <p id="result"> 0</p>
+    <p id="result"> </p>
   <div class="button-01">
-    <button class="btt-special" onclick="">AC</button>
+    <button class="btt-special" onclick="clean()">AC</button>
     <button class="btt-special" onclick="">+/-</button>
     <button class="btt-special" onclick="">%</button>
-    <button class="last-item" onclick="">÷</button>
+    <button class="last-item" onclick="insert('÷')">÷</button>
   </div>
 
   <div class="button-02">
-    <button onclick="">7</button>
-    <button onclick="">8</button>
-    <button onclick="">9</button>
-    <button class="last-item" onclick="">X</button>
+    <button  onclick="insert('7')">7</button>
+    <button onclick="insert('8')">8</button>
+    <button onclick="insert('9')">9</button>
+    <button class="last-item" onclick="insert('x')">X</button>
  </div>
 
  <div class="button-03">
-    <button onclick="">4</button>
-    <button onclick="">5</button>
-    <button onclick="">6</button>
-    <button class="last-item" onclick="">-</button>
+    <button onclick="insert('4')">4</button>
+    <button onclick="insert('5')">5</button>
+    <button onclick="insert('6')">6</button>
+    <button class="last-item" onclick="insert('-')">-</button>
  </div> 
 
   <div class="button-04">
-    <button onclick="">1</button>
-    <button onclick="">2</button>
-    <button onclick="">3</button>
-    <button class="last-item" onclick="">+</button>
+    <button onclick="insert('1')">1</button>
+    <button onclick="insert('2')">2</button>
+    <button onclick="insert('3')">3</button>
+    <button class="last-item" onclick="insert('+')">+</button>
  </div>
 
   <div class="button-05">
-    <button id="btt-nought" onclick="">0</button>
-    <button onclick="">,</button>
-    <button class="last-item" onclick="">=</button>
+    <button id="btt-nought" onclick="insert('0')">0</button>
+    <button onclick="insert(',')">,</button>
+    <button class="last-item" onclick="calculate()">=</button>
  </div>  
 </div>  
 
